@@ -2,17 +2,12 @@
 using System.Collections;
 
 public class FlightControler : MonoBehaviour {
-	public GUIText debugText;
+	//public GUIText debugText;
 	public float zoom;
 
 	private Touch prevTouch;
 	private Touch touch;
-	private Vector2 moveVector;
 	private float ratio;
-
-	void Start(){
-		moveVector = new Vector2 (0, 0);
-	}
 
 	void Update () {
 		//if (Input.touchCount == 1) {
@@ -44,7 +39,7 @@ public class FlightControler : MonoBehaviour {
 			//float x = zoom * touch.position.x / Screen.height;
 			//float y = zoom * ratio * touch.position.y / Screen.width;
 
-		debugText.text = Input.acceleration.x.ToString() + "," + Input.acceleration.y.ToString();
+		//debugText.text = Input.acceleration.x.ToString() + "," + Input.acceleration.y.ToString();
 			//debugText.text = x + ", " + y;
 			//transform.position = new Vector3(x, y, 3.5f);
 		//}

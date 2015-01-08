@@ -5,10 +5,8 @@ public class Stone1Controler : MonoBehaviour {
 
 	public GameObject rock1Explosion;
 	public GameObject playerExplosion;
-	public float speed;
 	
 	void Start () {
-		rigidbody.velocity = transform.forward * speed;
 	}
 
 	void OnTriggerEnter(Collider others){
