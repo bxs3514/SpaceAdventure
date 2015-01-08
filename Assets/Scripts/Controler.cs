@@ -25,13 +25,8 @@ public class Controler : MonoBehaviour {
 
 	IEnumerator Wave(){
 		yield return new WaitForSeconds(startTime);
-		barrierPosition = new Vector3(  Random.Range(-20f, 20f),
-		                              Random.Range(-20f, 20f),
-		                              50f );
-		Quaternion barrierQuaternion = Quaternion.identity;
-		Instantiate(barrier, barrierPosition, barrierQuaternion);
 		yield return new WaitForSeconds(singleWait);
-			/*while (true) {
+			while (true) {
 
 			for(int i = 0; i < waveCount; i++){
 				barrierPosition = new Vector3(  Random.Range(-40f, 40f),
@@ -42,7 +37,7 @@ public class Controler : MonoBehaviour {
 				yield return new WaitForSeconds(singleWait);
 			}
 			yield return new WaitForSeconds(waveWait);
-		}*/
+		}
 	}
 
 	public Vector3 getPosition(){
